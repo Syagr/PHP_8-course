@@ -1,32 +1,19 @@
 <?php
 
-$num = 145;
-$res = 'Sad';
-if ($num > 150){
-	$res = 'Success';
+$arr = [
+	'some' => 10,
+	'second' => 20,
+	30,
+	40,
+	50,
+];
+
+foreach ($arr as $value){
+	
+	
+	if ($value <= 30){
+		echo $key.PHP_EOL ;
+		continue;
+	}
+	echo $value.PHP_EOL ;
 }
-
-echo $res;
-
-
-$num = 145;
-if ($num > 140){
-	$res = 'Success';
-} else{
-	$res = 'Sad';
-}
-
-echo $res;
-
-
-$num = 80;
-if ($num > 150){
-	$res = 'Success';
-} elseif($num > 90){
-	$res = 'Super Sad';
-} else
-{
-	$res = 'Sad';
-}
-
-echo $res;
