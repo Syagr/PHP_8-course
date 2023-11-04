@@ -1,27 +1,21 @@
 <?php
 
-echo 1111111111111111;
+$num = 2324;
+$someNum = 324324;
 
-$float= 10.10;
+function hello(){
+return 10;
+};
 
-$str = 'Hello world';
-$num = 10;
-$str = "Hello world $num";
+$res = $num + hello();
 
-echo $str;
+echo $res;
 
-$bool = true // false
-$arr = [10, 'Hello world'];
 
-print_r($arr);
+function end($some){
+	$some = $some+10;
+	return $some;
 
-$null = null;
+$ends= 40;
 
-$num = 10;
-
-$res = $num + 10;
-
-echo $num;
-
-echo $null;
-var_dump($null);
+echo end($ends);
