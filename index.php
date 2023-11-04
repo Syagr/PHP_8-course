@@ -1,19 +1,40 @@
 <?php
 
+$numbers = [];
+$string = [];
+$bools = [];
+$arrs = [];
+
 $arr = [
-	'some' => 10,
-	'second' => 20,
-	30,
-	40,
+	20,
+	35,
 	50,
+	68,
+	'sadasd',
+	'dffsdffsd',
+	'fdsfsdf',
+	'gfdd',
+	'sdfsdfsd',
+	false,
+	true,
+	[1,2,3,4,5],
+	[2,3,4,5,6],
+	[3,4,5,6,7],
 ];
 
-foreach ($arr as $value){
-	
-	
-	if ($value <= 30){
-		echo $key.PHP_EOL ;
-		continue;
+foreach ($arr as $value) {
+	if (is_array($value)) {
+		$arrs[] = $value;
 	}
-	echo $value.PHP_EOL ;
+	elseif (is_string($value)) {
+		$string[] = $value;
+	}
+	elseif (is_bool($value)) {
+		$bools[] = $value;
+	}
+	elseif (is_int($value)) {
+		$numbers[] = $value;
+	}
 }
+
+var_dump($numbers, $string, $bools, $arrs);
