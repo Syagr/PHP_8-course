@@ -1,29 +1,32 @@
 <?php
 
-$res = pow (num: 10, exponent: 2);
+$num = 145;
+$res = 'Sad';
+if ($num > 150){
+	$res = 'Success';
+}
+
 echo $res;
 
-$foo = 'animal';
-$foo = ucfirst($foo);
-echo $foo;
 
-$str = 'some string 10';
-$res = str_replace('10', '', $str);
+$num = 145;
+if ($num > 140){
+	$res = 'Success';
+} else{
+	$res = 'Sad';
+}
+
 echo $res;
 
-// массив
 
-$arr = [10, 20, 30, 40,];
-array_push ($arr, 50);
-$max = max($arr);
-var_dump($max);
+$num = 80;
+if ($num > 150){
+	$res = 'Success';
+} elseif($num > 90){
+	$res = 'Super Sad';
+} else
+{
+	$res = 'Sad';
+}
 
-$arr = [
- 'first' => 10,
- 'bdbgd' => 20,
- 30,
- 40,
-];
-array_push( $arr, 50);
-
-var_dump($arr);
+echo $res;
