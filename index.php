@@ -1,21 +1,29 @@
 <?php
 
-$num = 2324;
-$someNum = 324324;
-
-function hello(){
-return 10;
-};
-
-$res = $num + hello();
-
+$res = pow (num: 10, exponent: 2);
 echo $res;
 
+$foo = 'animal';
+$foo = ucfirst($foo);
+echo $foo;
 
-function end($some){
-	$some = $some+10;
-	return $some;
+$str = 'some string 10';
+$res = str_replace('10', '', $str);
+echo $res;
 
-$ends= 40;
+// массив
 
-echo end($ends);
+$arr = [10, 20, 30, 40,];
+array_push ($arr, 50);
+$max = max($arr);
+var_dump($max);
+
+$arr = [
+ 'first' => 10,
+ 'bdbgd' => 20,
+ 30,
+ 40,
+];
+array_push( $arr, 50);
+
+var_dump($arr);
